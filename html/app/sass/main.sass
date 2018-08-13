@@ -13,12 +13,13 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
+	font-size: 18px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.5
 	font-family: $default-font
 	overflow-x: hidden
+	color: $text-color
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -37,5 +38,9 @@ body
 .text-center
 	text-align: center
 
+a
+	color: $accent
+	&:hover, &:focus
+		color: $accent
 
 @import "media" // Always at the end
