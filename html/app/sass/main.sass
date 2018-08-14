@@ -44,4 +44,72 @@ a
 	&:hover, &:focus
 		color: $accent
 
+.top-line
+	background-color: $dark
+	position: relative
+	height: 65px
+
+.logo
+	font-family: Roboto-b, sans-serif
+	text-transform: uppercase
+	color: #ffffff
+	font-size: 23px
+	display: inline-block
+	text-decoration: none
+	position: absolute
+	padding-left: 30px
+	left: 0
+	line-height: 65px
+	&:hover, &:focus
+		text-decoration: none
+		color: #ffffff
+	span
+		color: $accent
+	.logo-hyphen
+		span
+			color: $accentSecond
+			font-family: $bernard-font
+
+.main-menu 
+	padding: 0 100px
+	width: 100%
+	text-align: center
+	ul, li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+		margin-right: -4px
+		&.active
+			a
+				color: #ffffff
+				background-color: lighten($dark, 5)
+		&:hover
+			a
+				color: #ffffff
+				background-color: lighten($dark, 10)
+	a
+		color: #D1D9E0
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: bold
+		padding: 0 15px
+		line-height: 65px 
+		display: block
+		transition: color .25s ease, background-color .25s ease
+		
+.search-wrap
+	.search
+		position: absolute
+		padding: 
+			right: 30px
+			left: 10px
+		right: 0
+		
+	.search-field
+		display: none
+		position: absolute
+
 @import "media" // Always at the end
