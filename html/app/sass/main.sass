@@ -107,9 +107,61 @@ a
 			right: 30px
 			left: 10px
 		right: 0
-		
+		color: #1A0B75
+		cursor: pointer
+		line-height: 65px
+		text-align: center
+		transition: color .25s ease
+		&:hover
+			color: lighten(#1A0B75, 10)
 	.search-field
-		display: none
 		position: absolute
+		left: 0
+		top: 65px
+		padding: 15px
+		background-color: lighten($dark, 3)
+		width: 100%
+		border-top: lighten($dark, 10) 1px solid
+		z-index: 4
+		display: none
+		input[type=text]
+			width: 100%
+			padding: 8px 15px
+			border: lighten($dark, 10) 1px solid
+			background-color: lighten($dark, 7.5)
+			font-size: 16px
+			outline: none
+			color: #fff
+			&:focus
+				border-color: lighten($dark, 15)
+			&::placeholder
+				color: rgba(#fff, .2)
+				font-family: Arial, sans-serif
+				font-style: italic
+
+.mobile-menu-button
+	color: #ffffff
+	text-align: center
+	cursor: pointer
+	line-height: 65px
+	font-size: 17px
+	text-transform: uppercase
+	font-weight: bold
+	white-space: nowrap 
+	display: none
+	&:hover 
+		color: $accent
+
+.mobile-menu
+	display: none
+	background-color: lighten($dark, 3)
+	border-top: lighten($dark, 5) 1px solid
+	.top-menu
+		display: block
+	li
+		display: block
+		a
+			padding: 0
+			line-height: 45px
 
 @import "media" // Always at the end
