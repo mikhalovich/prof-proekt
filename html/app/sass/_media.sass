@@ -18,9 +18,13 @@
 		&-content
 			padding: 40px 30px
 
+	.second-section, .third-section
+		padding: $gutter/2 0
+
+
 // ≥768px
-	+media-breakpoint-down(sm)
-	
++media-breakpoint-down(sm)
+
 	.first-section
 		padding:
 			top: $gutter/2
@@ -35,6 +39,9 @@
 	.no-gutters
 		.pattern
 			margin-bottom: $gutter/2
+
+	.item-law
+		margin: $gutter/2 0 0
 
 // ≥576px
 +media-breakpoint-down(xs)
