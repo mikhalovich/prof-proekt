@@ -301,6 +301,53 @@ section
 	> *
 		display: inline-block
 
-			
+.second-section
+	padding: $gutter/2 0
+
+.law-wrap
+	padding-bottom: $gutter/2
+	.pattern
+		&::before
+			display: none
+	.overlay
+		&::before
+			opacity: 0.4
+	
+.item-law
+	min-height: 280px
+	margin: $gutter/2 0
+	color: $text-color
+	&-content
+		border: 
+			left: #dfdfdf 1px solid
+			bottom: #dfdfdf 1px solid
+		z-index: 1
+		position: absolute
+		bottom: 0
+		background-color: #fff
+		width: 80%
+		padding: $gutter
+		h3
+			font-size: 17px
+			line-height: 1.2
+			margin: 0 
+	&:hover
+		h3
+			text-decoration: underline
+
+.date
+	font-size: 13px
+	color: $accent
+	font-family: roboto-b, sans-serif
+	font-weight: bold
+
+.aside-box
+	margin-bottom: $gutter
+	text-align: center
+	.img-responsive
+		display: inline-block
+
+
+
 
 @import "media" // Always at the end
