@@ -30,5 +30,13 @@ $(function() {
 		$('.mobile-menu').stop().slideToggle();
 	});
 
-	
+	$('.col-item').hover(function(){
+		ths = $(this);
+		lnk = ths.closest('.col-item').find('h4 a');
+		lnk.addClass('hover');
+	}, function(){
+		lnk.removeClass('hover');
+	});
+
+
 });
