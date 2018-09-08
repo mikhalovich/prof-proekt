@@ -413,10 +413,51 @@ section
 .type-one
 	&-header
 		margin-bottom: $gutter/2
-
-	
-		
-	
+	&-first
+		> div
+			> a 
+				display: block
+				background-color: dark
+		.item-social
+			margin-top: 8px
+			a, .item-comments, .date
+				color: #a0a0aa
+				font-size: 13px
+			.item-comments-count
+				font-size: 12px
+			.date
+				display: inline-block
+				margin-left: 20px
+		h3
+			font-size: 22px
+			text-transform: uppercase
+			font-weight: 800
+			margin-top: 8px
+			line-height: 1.2
+			margin-bottom: 30px
+			a
+				color: $text-color
+				display: block
+			&:hover
+				a
+					color: $accent
+	.pattern
+		margin-bottom: $gutter
+					 
+.item-title-white
+	.date
+		font-size: 13px
+		display: inline-block
+		margin-left: 20px
+		color: #ffffff
+	.item-comments-count
+		font-size: 12px
+	.item-social
+		margin-top: 0
+	.item-title
+		min-height: 230px
+		&-content
+			padding: 40px 40px 25px
 	
 	
 	
