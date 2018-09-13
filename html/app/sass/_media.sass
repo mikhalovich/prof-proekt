@@ -64,6 +64,13 @@
 	.type-one
 		.pattern
 			margin-bottom: $gutter/2
+	.cat-header
+		&-block
+			padding: 50px
+			h1, h2
+				font-size: 28px
+	
+	
 	// ≥576px
 +media-breakpoint-down(xs)
 	.logo
@@ -84,6 +91,12 @@
 				height: 40px
 				font-size: 18px
 				line-height: 38px 
+	.cat-list
+		padding-top: 0
+	
+	.cat-list-item:last-child
+		margin-bottom: 0
+		padding-bottom: 0
 /*==========  Mobile First  ==========*/
 
 // ≤576px
