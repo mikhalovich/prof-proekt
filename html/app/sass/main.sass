@@ -588,7 +588,7 @@ nav.soc
 			left: 10px
 		p, h1, h2
 			margin: 0
-		h1, h2 
+		h1, h2
 			font-size: 30px
 			text-transform: uppercase
 			margin-bottom: 15px
@@ -1285,4 +1285,16 @@ a.cat-list-item
 .comments
 	padding: $gutter 0 
 
+.header-about
+	text-align: center
+	h1, h2 
+		font-family: bernard-g, sans-serif
+		text-transform: lowercase
+	&::before
+		opacity: 0
+	.cat-header-block
+		background-color: rgba(#09032E, .8)
+		&::before
+			opacity: 0.12
+	
 @import "media" // Always at the end
