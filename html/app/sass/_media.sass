@@ -5,15 +5,19 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-  .main-menu
-  	display: none
-    padding: 20px
-  .mobile-menu-button
-    display: block
+	.main-menu
+  		display: none
+    	padding: 20px
+	
+	.mobile-menu-button
+    	display: block
 
+	.ispage
+		.top-menu
+			top: 65px
+			position: relative
 // ≥992px
 +media-breakpoint-down(md)
-  
 	.item-title
 		&-content
 			padding: 40px 30px
@@ -28,6 +32,7 @@
 				border-bottom: 0
 				padding-bottom: 0
 				margin-bottom: 0
+
 // ≥768px
 +media-breakpoint-down(sm)
 
@@ -70,7 +75,14 @@
 			h1, h2
 				font-size: 28px
 	
-	
+	.page-header
+		&-meta
+			h1 
+				font-size: 24px
+				margin: 10px 0 0
+		&.overlay::before
+			background-image: linear-gradient(rgba(#000000, .3), rgba(#000000, .75))
+
 	// ≥576px
 +media-breakpoint-down(xs)
 	.logo
