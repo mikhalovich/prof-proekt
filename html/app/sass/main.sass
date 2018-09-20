@@ -1288,13 +1288,20 @@ a.cat-list-item
 .header-about
 	text-align: center
 	h1, h2 
-		font-family: bernard-g, sans-serif
-		text-transform: lowercase
+		font-family: roboto-g, sans-serif
+		text-transform: uppercase
 	&::before
 		opacity: 0
 	.cat-header-block
 		background-color: rgba(#09032E, .8)
 		&::before
 			opacity: 0.12
+		h1
+			span:nth-child(1) 
+				color: $accent
+			span:nth-child(2)
+				font-family: bernard-g, sans-serif
+				color: $accentSecond
+
 	
 @import "media" // Always at the end
