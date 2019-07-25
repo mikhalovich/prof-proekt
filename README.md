@@ -1,15 +1,11 @@
-# Контентный сайт
+# Content site
 
-Разработка дизайна сайта, верстка и наладка, SEO оптимизация заняли у меня месяц. Все операции я производил вечерами, в свободное от работы время. Суммарно я потратил где-то 13 часов времени.
+Development and layout making, SEO optimization.
 
-**Используемые технологии и инструменты:**
+**Used technologies:**
 * Adobe XD, Adobe Illustrator
 * HTML, SASS, Bootstrap 4
 * JS (jQuery)
-* Статический генератор сайтов Jekyll
+* Statick page generator Jekyll
 * Gulp, BrowserSync, OptimizedHTML 4
 * Git
-
-В качестве системы аналитики была выбрана **Яндекс.Метрика**, так как ее функционала для проведения анализа посещаемости, конверсии и прочего более чем достаточно.
-
-[Перейти на сайт](https://moto-news.by)
